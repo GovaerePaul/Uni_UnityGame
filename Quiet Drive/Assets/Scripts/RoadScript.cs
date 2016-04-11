@@ -15,7 +15,7 @@ internal
 
 public class RoadScript : MonoBehaviour
 {
-    public Transform roadPrefab;
+    public Transform Player;//TODO: change to private and show in inspector 
 
     // Use this for initialization
     void Start()
