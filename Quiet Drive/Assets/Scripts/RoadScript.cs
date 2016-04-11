@@ -27,6 +27,8 @@ public class RoadScript : MonoBehaviour
     void Update()
     {
 
+        //is the player close enough for making the next one?
 
+        //is the player far away enough to delete this one
     }
 }
