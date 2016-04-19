@@ -2,3 +2,4 @@ AI cars - how to have them drving along?
 HUD - speed and distance, save distance as high score
 Change road gen to account for player being still (no need to check if the player is stationary)
 player movement
+road has turns
