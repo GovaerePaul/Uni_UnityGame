@@ -1,0 +1,1 @@
+Deque.cs - http://nitodeque.codeplex.com/SourceControl/latest#Source/PortableClassLibrary/Deque.cs

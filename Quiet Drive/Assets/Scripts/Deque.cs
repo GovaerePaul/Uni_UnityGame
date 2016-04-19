@@ -16,6 +16,22 @@ namespace Nito
     [DebuggerTypeProxy(typeof(Deque<>.DebugView))]
     internal sealed class Deque<T> : IList<T>, System.Collections.IList
     {
+
+        //I've added these myself, mainly copy-paste the pre-existing remove code - Nephi
+        //see DoRemoveFromBack DoRemoveFromFront
+        public T peakBack()
+        {
+            T ret = buffer[DequeIndexToBufferIndex(Count - 1)];
+            return ret;
+        }
+
+        public T peakFront()
+        {
+            return buffer[PostIncrement(1)];
+        }
+
+        //End of my additions - Nephi
+
         /// <summary>
         /// The default capacity.
         /// </summary>
@@ -645,6 +661,7 @@ namespace Nito
             --Count;
             return buffer[PostIncrement(1)];
         }
+
 
         /// <summary>
         /// Inserts a range of elements into the view.
