@@ -5,12 +5,12 @@ using System.Collections;
 
 public class CameraScript : MonoBehaviour
 {
-    public Transform player;//TODO: change to private and show in inspector 
+    private GameObject player;
 
     // Use this for initialization
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
