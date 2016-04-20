@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
         roadList.AddToFront(nextRoad);
     }
 
-    void RoadBuilding()
+    private void RoadBuilding()
     {
 
         GameObject roadFirst = roadList.peakFront();
