@@ -6,7 +6,8 @@ using Nito; //see Deque.cs
 
 public class GameControllerScript : MonoBehaviour
 {
-    public float roadBufferDist = 10;//distance to keep ends of road from player
+    [SerializeField]
+    private float roadBufferDist = 10;//distance to keep ends of road from player
     [SerializeField]
     private GameObject roadPrefab;
 
@@ -59,6 +60,6 @@ public class GameControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RoadBuilding();
+        //RoadBuilding();
     }
 }
