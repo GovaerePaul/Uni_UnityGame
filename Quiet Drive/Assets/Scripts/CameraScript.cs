@@ -22,7 +22,6 @@ public class CameraScript : MonoBehaviour
     void Update()
     {
         TrackPlayer();
-        //this.transform.LookAt(player.transform);
     }
 
     private bool CheckXMargin()
