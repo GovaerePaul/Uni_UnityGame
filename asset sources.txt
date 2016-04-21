@@ -1,2 +1,3 @@
 Deque.cs - http://nitodeque.codeplex.com/SourceControl/latest#Source/PortableClassLibrary/Deque.cs
+  Removed due to bugs
 car - unity standard assets (Assets->Import Package->Vehicels)

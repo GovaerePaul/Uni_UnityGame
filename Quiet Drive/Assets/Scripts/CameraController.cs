@@ -8,7 +8,9 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     private Vector3 speed = new Vector3(8,8,8);//how fast to move
     [SerializeField]
-    private Vector3 margin = new Vector3(10, 10, 10);//how close to the player to be
+    private Vector3 margin = new Vector3(1, 1, 1);//how close to the player to be
+    [SerializeField]
+    private float height = 2;//offset for above car
 
     private GameObject player;
 
@@ -16,6 +18,7 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        this.transform.position = new Vector3(0, 5, -5);
     }
 
     // Update is called once per frame
@@ -31,7 +34,7 @@ public class CameraController : MonoBehaviour
 
     private bool CheckYMargin()
     {
-        return Mathf.Abs(this.transform.position.y - player.transform.position.y) > margin.y;
+        return Mathf.Abs((this.transform.position.y - player.transform.position.y) + height) > margin.y;
     }
 
     private bool CheckZMargin()
